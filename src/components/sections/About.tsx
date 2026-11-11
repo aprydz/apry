@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { CheckCircle2, Compass, Cpu, Layers, Sparkles, UserCheck } from "lucide-react";
+import { CheckCircle2, UserCheck } from "lucide-react";
 
 export const About = () => {
   return (
@@ -111,16 +112,41 @@ export const About = () => {
                 <span className="w-2.5 h-2.5 rounded-full bg-white/20 group-hover:bg-white transition-colors" />
               </div>
 
-              {/* Stylized Developer Avatar & Terminal Badge */}
-              <div className="w-full aspect-square max-h-[220px] rounded-2xl border border-border/80 bg-background/90 p-6 flex flex-col items-center justify-center text-center relative overflow-hidden">
-                <div className="w-20 h-20 rounded-full border border-white/20 bg-card flex items-center justify-center font-heading text-2xl font-bold text-white shadow-2xl mb-4 group-hover:scale-105 transition-transform duration-300">
-                  AP
+              {/* Developer Photographic Portrait & Info */}
+              <div className="relative w-full h-[320px] sm:h-[360px] rounded-2xl border border-border/80 overflow-hidden group/photo bg-background/90 shadow-2xl">
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Apriyadi - Full-Stack Developer"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 420px"
+                  className="object-cover object-top filter grayscale-[25%] contrast-[1.05] group-hover/photo:scale-105 group-hover/photo:grayscale-0 transition-all duration-700 ease-out"
+                  priority
+                />
+
+                {/* Dark Editorial Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#101010] via-black/30 to-transparent opacity-90" />
+
+                {/* Top status indicator on photo */}
+                <div className="absolute top-3.5 left-3.5 z-10">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[11px] font-mono text-emerald-400">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span>Active // Open to Work</span>
+                  </div>
                 </div>
-                <div className="font-heading font-medium text-white text-base">
-                  Apriyadi
-                </div>
-                <div className="font-mono text-xs text-muted mt-1">
-                  Full-Stack Engineer &amp; Designer
+
+                {/* Bottom details on photo */}
+                <div className="absolute bottom-4 left-4 right-4 z-10 flex items-end justify-between">
+                  <div>
+                    <h4 className="font-heading text-xl font-semibold text-white drop-shadow-md">
+                      Apriyadi
+                    </h4>
+                    <p className="font-mono text-xs text-neutral-300 mt-0.5 drop-shadow">
+                      Full-Stack Engineer &amp; Designer
+                    </p>
+                  </div>
+                  <span className="font-mono text-[10px] text-white/60 px-2 py-1 rounded bg-black/50 backdrop-blur-sm border border-white/10">
+                    ID // AP-01
+                  </span>
                 </div>
               </div>
 
@@ -161,3 +187,4 @@ export const About = () => {
     </section>
   );
 };
+

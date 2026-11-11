@@ -23,8 +23,8 @@ export const projectsData: Project[] = [
     longDescription: "Engineered a responsive e-commerce web platform optimized for Core Web Vitals and sub-second page transitions. Implemented secure webhook-driven payment processing, cart persistence, transactional email receipts, and a clean admin panel for inventory and order fulfillment.",
     tags: ["React", "Next.js", "Laravel", "MySQL", "Tailwind CSS", "Stripe API"],
     thumbnail: "/projects/project-ecommerce.png",
-    liveUrl: "https://atelier-fashion-store.vercel.app",
-    githubUrl: "https://github.com/developer/fashion-marketplace-app",
+    liveUrl: "https://marketfashion-production.up.railway.app/",
+    githubUrl: "https://github.com/aprydz/marketfashion",
     featured: true,
     year: "2024",
     role: "Full-Stack Engineer",
@@ -72,3 +72,4 @@ export const projectsData: Project[] = [
     role: "Backend Architect",
   },
 ];
+

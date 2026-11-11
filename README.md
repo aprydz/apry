@@ -108,3 +108,4 @@ npm run start
    ```
 2. Import the repository into [Vercel](https://vercel.com/new).
 3. Vercel will automatically detect Next.js and deploy your portfolio live with zero configuration needed.
+

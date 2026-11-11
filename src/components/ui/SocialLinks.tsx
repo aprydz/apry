@@ -11,20 +11,20 @@ interface SocialLinksProps {
 export const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/apriyadi-dev",
-    handle: "@apriyadi-dev",
+    url: "https://github.com/aprydz",
+    handle: "@aprydz",
     icon: GithubIcon,
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/apriyadi-dev",
-    handle: "in/apriyadi-dev",
+    url: "https://www.linkedin.com/in/apriyadi-firmansyah-61b79a204/",
+    handle: "in/apriyadi-firmansyah-61b79a204/",
     icon: LinkedinIcon,
   },
   {
     name: "Instagram",
-    url: "https://instagram.com/apriyadi.tech",
-    handle: "@apriyadi.tech",
+    url: "https://www.instagram.com/dzyy16/",
+    handle: "@dzyy16",
     icon: InstagramIcon,
   },
   {
