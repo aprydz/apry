@@ -64,9 +64,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} scroll-smooth`}
     >
-      <body className="bg-background text-foreground min-h-screen antialiased selection:bg-white selection:text-black">
+      <body
+        suppressHydrationWarning
+        className="bg-background text-foreground min-h-screen antialiased selection:bg-white selection:text-black"
+      >
         {children}
       </body>
     </html>

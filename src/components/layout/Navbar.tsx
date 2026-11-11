@@ -111,6 +111,7 @@ export const Navbar = () => {
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          suppressHydrationWarning
           className="md:hidden p-2 rounded-xl border border-border bg-card text-muted hover:text-white transition-colors"
         >
           {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

@@ -67,6 +67,7 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
+      suppressHydrationWarning
       className={cn(baseStyles, sizeStyles[size], variantStyles[variant], className)}
       {...props}
     >

@@ -93,6 +93,7 @@ export const Footer = () => {
           <button
             onClick={scrollToTop}
             aria-label="Scroll back to top"
+            suppressHydrationWarning
             className="group flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-border bg-card hover:bg-card-hover hover:border-white/30 text-muted hover:text-white transition-all duration-200"
           >
             <span>Back to top</span>

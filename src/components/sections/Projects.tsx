@@ -46,6 +46,7 @@ export const Projects = () => {
             <button
               onClick={() => scroll("left")}
               aria-label="Previous project"
+              suppressHydrationWarning
               className="w-11 h-11 rounded-full border border-border bg-card flex items-center justify-center text-muted hover:text-white hover:border-white/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -53,6 +54,7 @@ export const Projects = () => {
             <button
               onClick={() => scroll("right")}
               aria-label="Next project"
+              suppressHydrationWarning
               className="w-11 h-11 rounded-full border border-border bg-card flex items-center justify-center text-muted hover:text-white hover:border-white/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
               <ChevronRight className="w-5 h-5" />
@@ -70,6 +72,7 @@ export const Projects = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
+              suppressHydrationWarning
               className={`px-3.5 py-1.5 rounded-full font-mono text-xs whitespace-nowrap transition-all duration-200 shrink-0 ${
                 activeCategory === category
                   ? "bg-white text-black font-medium shadow-sm"

@@ -210,6 +210,7 @@ export const Contact = () => {
                       <input
                         id="name"
                         type="text"
+                        suppressHydrationWarning
                         placeholder="John Doe"
                         value={formData.name}
                         onChange={(e) => {
@@ -241,6 +242,7 @@ export const Contact = () => {
                       <input
                         id="email"
                         type="email"
+                        suppressHydrationWarning
                         placeholder="john@example.com"
                         value={formData.email}
                         onChange={(e) => {
@@ -273,6 +275,7 @@ export const Contact = () => {
                     <input
                       id="subject"
                       type="text"
+                      suppressHydrationWarning
                       placeholder="Project Inquiry, Job Opportunity, Collaboration..."
                       value={formData.subject}
                       onChange={(e) =>
@@ -293,6 +296,7 @@ export const Contact = () => {
                     <textarea
                       id="message"
                       rows={5}
+                      suppressHydrationWarning
                       placeholder="Tell me about your project scope, goals, or timeline..."
                       value={formData.message}
                       onChange={(e) => {
@@ -317,6 +321,7 @@ export const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
+                    suppressHydrationWarning
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white text-black font-mono text-xs uppercase tracking-wider font-semibold hover:bg-neutral-200 transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed group shadow-sm active:scale-[0.99]"
                   >
                     {isSubmitting ? (
