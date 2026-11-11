@@ -6,7 +6,14 @@ import { ProjectCard } from "@/components/ui/ProjectCard";
 import { projectsData } from "@/data/projects";
 import { ChevronLeft, ChevronRight, Sparkles, Filter } from "lucide-react";
 
-const CATEGORIES = ["All", "Full-Stack Web Application", "E-Commerce & Inventory", "Creative Engineering", "Productivity SaaS", "Backend Architecture"];
+const CATEGORIES = [
+  "All",
+  "E-Commerce & Food",
+  "Financial Tech",
+  "Interactive Web",
+  "Fashion Marketplace",
+  "Academic Systems",
+];
 
 export const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
